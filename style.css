@@ -51,7 +51,7 @@
   --padding: 2rem;
   --max-width: 375px - calc(var(--padding) * 2);
 
-  margin-top: 5rem;
+  margin-top: 10rem;
 
   margin-inline: auto;
   background-color: var(--clr-neutral-100);
