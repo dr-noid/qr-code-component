@@ -1,0 +1,86 @@
+:root {
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-400: hsl(212, 45%, 89%);
+
+  --clr-primary-400: hsl(220, 15%, 55%);
+  --clr-primary-700: hsl(218, 44%, 22%);
+
+  --ff-primary: "Outfit", sans-serif;
+
+  --ff-body: var(var(--ff-primary));
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 0.9375rem;
+  --fs-500: 1.35rem;
+}
+
+/* Utility classes */
+
+.text-primary-700 {
+  color: var(--clr-primary-700);
+}
+
+.text-primary-400 {
+  color: var(--clr-primary-400);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+.fs-500 {
+  font-size: var(--fs-500);
+}
+
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+.container {
+  --padding: 2rem;
+  --max-width: 375px - calc(var(--padding) * 2);
+
+  margin-top: 5rem;
+
+  margin-inline: auto;
+  background-color: var(--clr-neutral-100);
+  border-radius: 1.5rem;
+
+  width: min(var(--max-width));
+}
+
+.grid-container {
+  display: grid;
+  grid-auto-flow: row;
+  padding-bottom: 1.5rem;
+}
+
+.grid-container :where(div, h1, p) {
+  padding: 0.5rem 1rem;
+}
+
+/* Styling */
+
+img {
+  padding: 1rem;
+  border-radius: 1.5rem;
+}
+
+body {
+  background-color: var(--clr-neutral-400);
+}
+
+.text-content {
+  text-align: center;
+}
